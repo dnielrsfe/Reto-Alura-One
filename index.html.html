@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        
+        body {
+            background-image: url('banner/Dr.-Doofenshmirtz-in-Phineas-and-Ferb.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            font-family: Arial, sans-serif; 
+        }
+
+     
+        .contenedor {
+            background-color: rgba(22, 198, 218, 0.849); 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+
+      
+        .imagen {
+            width: 100px; 
+            height: auto; 
+            margin-bottom: 20px;
+            position: absolute; 
+            top: 10px; 
+            right: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <div class="contenedor">
+        <img src="banner/Dr.-Doofenshmirtz-in-Phineas-and-Ferb.jpg" alt="Imagen" class="imagen">
+        <div id="select_proceso">
+            <input type="button" value="Encriptar" id="encriptar">
+            <input type="button" value="Desencriptar" id="desencriptar">
+        </div>
+
+        <div id="procesador">
+            <label for="txt_informacion">Texto a procesar</label>
+            <textarea id="txt_informacion" required></textarea>
+            <input type="button" value="procesar" id="btn_procesar">
+        </div>
+
+        <div id="resultado">
+            <label for="txt_resultado">Texto procesado</label>
+            <textarea id="txt_resultado"></textarea>
+            <input type="button" value="Copiar" id="btn_copiar">
+        </div>
+    </div>
+</body>
+</html>
